@@ -292,3 +292,106 @@ bool Store::applyCategoryDiscount(User *currentUser, const std::string &category
 }
 
 // 移除了 enterStore, display*Menu, handle*Action
+
+// --- 实现新的创建方法 ---
+bool Store::createBook(User *currentUser, const string &name, const string &desc, double price, int qty, const string &author, const string &isbn)
+{
+    if (!currentUser || currentUser->getUserType() != "商家")
+    {
+        cerr << "错误: 只有商家可以添加商品。" << endl;
+        return false;
+    }
+    if (findProductByName(name) != nullptr)
+    {
+        cerr << "错误: 商品名称 \"" << name << "\" 已存在。" << endl;
+        return false;
+    }
+    if (price < 0 || qty < 0)
+    {
+        cerr << "错误: 价格和数量不能为负数。" << endl;
+        return false;
+    }
+    try
+    {
+        products.push_back(new Book(name, desc, price, qty, author, isbn));
+        return saveProductsToFile();
+    }
+    catch (const std::bad_alloc &e)
+    {
+        cerr << "错误: 添加图书时内存分配失败: " << e.what() << endl;
+        return false;
+    }
+    catch (...)
+    {
+        cerr << "错误: 添加图书时发生未知错误。" << endl;
+        return false;
+    }
+}
+
+bool Store::createClothing(User *currentUser, const string &name, const string &desc, double price, int qty, const string &size, const string &color)
+{
+    if (!currentUser || currentUser->getUserType() != "商家")
+    {
+        cerr << "错误: 只有商家可以添加商品。" << endl;
+        return false;
+    }
+    if (findProductByName(name) != nullptr)
+    {
+        cerr << "错误: 商品名称 \"" << name << "\" 已存在。" << endl;
+        return false;
+    }
+    if (price < 0 || qty < 0)
+    {
+        cerr << "错误: 价格和数量不能为负数。" << endl;
+        return false;
+    }
+    try
+    {
+        products.push_back(new Clothing(name, desc, price, qty, size, color));
+        return saveProductsToFile();
+    }
+    catch (const std::bad_alloc &e)
+    {
+        cerr << "错误: 添加服装时内存分配失败: " << e.what() << endl;
+        return false;
+    }
+    catch (...)
+    {
+        cerr << "错误: 添加服装时发生未知错误。" << endl;
+        return false;
+    }
+}
+
+bool Store::createFood(User *currentUser, const string &name, const string &desc, double price, int qty, const string &expDate)
+{
+    if (!currentUser || currentUser->getUserType() != "商家")
+    {
+        cerr << "错误: 只有商家可以添加商品。" << endl;
+        return false;
+    }
+    if (findProductByName(name) != nullptr)
+    {
+        cerr << "错误: 商品名称 \"" << name << "\" 已存在。" << endl;
+        return false;
+    }
+    if (price < 0 || qty < 0)
+    {
+        cerr << "错误: 价格和数量不能为负数。" << endl;
+        return false;
+    }
+    try
+    {
+        products.push_back(new Food(name, desc, price, qty, expDate));
+        return saveProductsToFile();
+    }
+    catch (const std::bad_alloc &e)
+    {
+        cerr << "错误: 添加食品时内存分配失败: " << e.what() << endl;
+        return false;
+    }
+    catch (...)
+    {
+        cerr << "错误: 添加食品时发生未知错误。" << endl;
+        return false;
+    }
+}

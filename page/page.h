@@ -29,7 +29,7 @@ public:
     // 管理员菜单 (如果需要可以添加)
     int pagemainAdmin(User *currentUser, std::vector<User *> &users);
 
-    virtual int pagestore(User *currentUser, std::vector<User *> &users, Store &store);
+    virtual int pagestore(User *currentUser, std::vector<User *> &users, Store &store) = 0;
 };
 
 // --- Page 派生类 ---

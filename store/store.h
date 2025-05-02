@@ -120,16 +120,25 @@ public:
     // --- Core Store Functionality (供 Page 子类调用) ---
     // 显示所有商品 (const)
     void displayAllProducts() const;
+
     // 搜索商品 (const) - 返回找到的商品列表或直接显示
     std::vector<Product *> searchProductsByName(const std::string &searchTerm) const;
+
     // 添加商品 (需要 User* 判断权限) - 返回是否成功
     bool addProduct(User *currentUser, const Product &newProductData); // 传入具体商品数据
+
     // 管理商品 (需要 User* 判断权限) - 返回是否成功
     bool manageProductPrice(User *currentUser, const std::string &productName, double newPrice);
     bool manageProductQuantity(User *currentUser, const std::string &productName, int newQuantity);
     bool manageProductDiscount(User *currentUser, const std::string &productName, double newDiscount);
+
     // 应用分类折扣 (需要 User* 判断权限) - 返回是否成功
     bool applyCategoryDiscount(User *currentUser, const std::string &category, double discount);
+
+    // 添加具体的创建方法
+    bool createBook(User *currentUser, const std::string &name, const std::string &desc, double price, int qty, const std::string &author, const std::string &isbn);
+    bool createClothing(User *currentUser, const std::string &name, const std::string &desc, double price, int qty, const std::string &size, const std::string &color);
+    bool createFood(User *currentUser, const std::string &name, const std::string &desc, double price, int qty, const std::string &expDate);
 
     // 获取商品列表的只读访问权限 (如果需要)
     const std::vector<Product *> &getProducts() const { return products; }
