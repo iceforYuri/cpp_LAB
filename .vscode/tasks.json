@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译整个项目",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\start.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\page\\page.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "-o",
+                "${workspaceFolder}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译整个 main 目录下的所有 cpp 文件。"
+        }
+    ],
+    "version": "2.0.0"
+}
