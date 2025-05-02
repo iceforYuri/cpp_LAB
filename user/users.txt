@@ -1,5 +1,5 @@
 admin,admin,admin,0
+customer,afa,afa,0
+customer,a,a,0
 customer,asdfas,asdfas,0
-customer,asdfasas,as,0
-customer,sdf,sdf,0
-seller,af,af,0
+seller,ab,ab,0

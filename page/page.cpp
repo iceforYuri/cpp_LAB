@@ -50,6 +50,7 @@ int Page::pagemain(vector<User *> &users, User *&currentUser)
                 // 注册成功后可以选择留在主菜单或直接进入用户菜单
                 // return 1; // 如果想直接进入用户菜单
             }
+            return 1;
             break; // 留在主菜单
         case 2:
             currentUser = User::userLogin(users);
@@ -295,7 +296,7 @@ int Customer_page::pagestore(User *currentUser, std::vector<User *> &users, Stor
 int Seller_page::pagestore(User *currentUser, std::vector<User *> &users, Store &store)
 {
     // 确保当前用户是商家
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
     {
         cout << "错误：只有商家才能访问此页面。" << endl;
         return 1; // 直接退出

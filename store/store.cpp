@@ -208,7 +208,7 @@ vector<Product *> Store::searchProductsByName(const string &searchTerm) const
 // 或者修改为传入所有必要参数来创建
 bool Store::addProduct(User *currentUser, const Product &newProductData)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
     {
         cerr << "错误: 只有商家可以添加商品。" << endl;
         return false;
@@ -229,7 +229,7 @@ bool Store::addProduct(User *currentUser, const Product &newProductData)
 
     // --- 替代方案：在 Store 中添加创建方法 ---
     // bool Store::createBook(User* currentUser, string name, ..., string isbn) {
-    //     if (!currentUser || currentUser->getUserType() != "商家") return false;
+    //     if (!currentUser || currentUser->getUserType() != "seller") return false;
     //     if (findProductByName(name)) return false;
     //     products.push_back(new Book(name, ..., isbn));
     //     return saveProductsToFile();
@@ -239,7 +239,7 @@ bool Store::addProduct(User *currentUser, const Product &newProductData)
 
 bool Store::manageProductPrice(User *currentUser, const std::string &productName, double newPrice)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
         return false;
     Product *product = findProductByName(productName);
     if (!product || newPrice < 0)
@@ -250,7 +250,7 @@ bool Store::manageProductPrice(User *currentUser, const std::string &productName
 
 bool Store::manageProductQuantity(User *currentUser, const std::string &productName, int newQuantity)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
         return false;
     Product *product = findProductByName(productName);
     if (!product || newQuantity < 0)
@@ -261,7 +261,7 @@ bool Store::manageProductQuantity(User *currentUser, const std::string &productN
 
 bool Store::manageProductDiscount(User *currentUser, const std::string &productName, double newDiscount)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
         return false;
     Product *product = findProductByName(productName);
     if (!product || newDiscount < 0.0 || newDiscount > 1.0)
@@ -272,7 +272,7 @@ bool Store::manageProductDiscount(User *currentUser, const std::string &productN
 
 bool Store::applyCategoryDiscount(User *currentUser, const std::string &category, double discount)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
         return false;
     if (discount < 0.0 || discount > 1.0)
         return false;
@@ -296,7 +296,7 @@ bool Store::applyCategoryDiscount(User *currentUser, const std::string &category
 // --- 实现新的创建方法 ---
 bool Store::createBook(User *currentUser, const string &name, const string &desc, double price, int qty, const string &author, const string &isbn)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
     {
         cerr << "错误: 只有商家可以添加商品。" << endl;
         return false;
@@ -330,7 +330,7 @@ bool Store::createBook(User *currentUser, const string &name, const string &desc
 
 bool Store::createClothing(User *currentUser, const string &name, const string &desc, double price, int qty, const string &size, const string &color)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
     {
         cerr << "错误: 只有商家可以添加商品。" << endl;
         return false;
@@ -364,7 +364,7 @@ bool Store::createClothing(User *currentUser, const string &name, const string &
 
 bool Store::createFood(User *currentUser, const string &name, const string &desc, double price, int qty, const string &expDate)
 {
-    if (!currentUser || currentUser->getUserType() != "商家")
+    if (!currentUser || currentUser->getUserType() != "seller")
     {
         cerr << "错误: 只有商家可以添加商品。" << endl;
         return false;
