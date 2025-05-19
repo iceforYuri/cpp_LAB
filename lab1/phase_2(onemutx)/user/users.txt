@@ -1,0 +1,8 @@
+admin,admin,admin,0
+afa,afa,customer,0
+a,a,customer,0
+asdfas,asdfas,customer,0
+ab,ab,seller,1815
+asdfasa,a,customer,0
+afaj,afaj,seller,0
+1234,1234,customer,11791.5

@@ -1,0 +1,7 @@
+OrderID:ORD-20250518-204120-777
+CustomerUsername:afa
+Timestamp:1747572080
+Status:COMPLETED
+TotalAmount:10.00
+ItemsCount:1
+aba,aba,1,10.00,ab

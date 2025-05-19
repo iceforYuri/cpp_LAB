@@ -1,0 +1,130 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译整个项目",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\start.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\page\\page.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\ordermanager\\ordermanager.cpp",
+                
+                "-o",
+                "${workspaceFolder}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                
+            },
+            "detail": "编译整个 main 目录下的所有 cpp 文件。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译服务器",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\server.cpp",
+                "${workspaceFolder}\\globals.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\ordermanager\\ordermanager.cpp",
+                "-o",
+                "${workspaceFolder}\\server.exe",
+                "-lws2_32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "编译服务器程序"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译客户端(旧版)",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\client.cpp",
+                "-o",
+                "${workspaceFolder}\\client.exe",
+                "-lws2_32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "编译原始客户端程序(全局变量版本)"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译客户端(新版)",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\client_run.cpp",
+                "${workspaceFolder}\\client\\client.cpp",
+                "-o",
+                "${workspaceFolder}\\client_oop.exe",
+                "-lws2_32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "编译重构的客户端程序(OOP版本)"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译服务端(新版)",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\server_run.cpp",
+                "${workspaceFolder}\\globals.cpp",
+                "${workspaceFolder}\\server\\server.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\ordermanager\\ordermanager.cpp",
+                "-o",
+                "${workspaceFolder}\\server_oop.exe",
+                "-lws2_32"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "编译重构的服务端程序(OOP版本)"
+        }
+    ],
+    "version": "2.0.0"
+}

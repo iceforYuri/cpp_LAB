@@ -1,0 +1,8 @@
+OrderID:ORD-20250518-194944-425
+CustomerUsername:1234
+Timestamp:1747568984
+Status:COMPLETED
+TotalAmount:105.50
+ItemsCount:2
+aba,aba,1,10.00,ab
+afds,afds,1,95.50,ab
