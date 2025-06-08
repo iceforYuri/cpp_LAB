@@ -1,0 +1,7 @@
+OrderID:ORD-20250527-103028-638
+CustomerUsername:1234
+Timestamp:1748313028
+Status:COMPLETED
+TotalAmount:63.56
+ItemsCount:1
+afds,afds,1,63.56,ab

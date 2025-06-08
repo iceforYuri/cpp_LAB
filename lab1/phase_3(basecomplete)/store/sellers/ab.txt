@@ -3,3 +3,4 @@ Generic,sb,sb,101,100,0.6,ab,sb
 Generic,afa,sb,30,10000,0.6,ab,sb
 Generic,aba,aba,10,0,0,ab,page
 Generic,c++,c++,99,1,0,ab,c++
+Generic,14,14,14,14,0,ab,14

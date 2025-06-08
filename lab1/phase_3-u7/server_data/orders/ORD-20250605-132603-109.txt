@@ -1,0 +1,7 @@
+OrderID:ORD-20250605-132603-109
+CustomerUsername:1234
+Timestamp:1749101163
+Status:COMPLETED
+TotalAmount:63.56
+ItemsCount:1
+afds,afds,1,63.56,ab

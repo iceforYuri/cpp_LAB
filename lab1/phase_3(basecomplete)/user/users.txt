@@ -8,3 +8,4 @@ afaj,afaj,seller,0
 1234,1234,customer,1543
 asdf,asdf,customer,990
 ip,ip,seller,0
+aba,aba,seller,0

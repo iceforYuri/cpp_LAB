@@ -1,0 +1,3 @@
+afds,afds,1,63.558,ab
+sb,sb,1,103.737,ab
+afa,afa,1,20.61,ab

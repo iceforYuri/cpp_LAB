@@ -1,0 +1,144 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译整个项目",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\start.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\page\\page.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\ordermanager\\ordermanager.cpp",
+                
+                "-o",
+                "${workspaceFolder}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "编译整个 main 目录下的所有 cpp 文件。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译UI版项目",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\ui_main.cpp",
+                "${workspaceFolder}\\ui\\ui.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\ordermanager\\ordermanager.cpp",
+                "${workspaceFolder}\\imgui\\imgui.cpp",
+                "${workspaceFolder}\\imgui\\imgui_demo.cpp",
+                "${workspaceFolder}\\imgui\\imgui_draw.cpp",
+                "${workspaceFolder}\\imgui\\imgui_tables.cpp",
+                "${workspaceFolder}\\imgui\\imgui_widgets.cpp",
+                "${workspaceFolder}\\imgui\\backends\\imgui_impl_glfw.cpp",
+                "${workspaceFolder}\\imgui\\backends\\imgui_impl_opengl3.cpp",
+                "-I\"${workspaceFolder}\"",
+                "-I\"${workspaceFolder}\\imgui\"",
+                "-I\"${workspaceFolder}\\glfw\\include\"",
+                "-L\"${workspaceFolder}\\glfw\\lib-mingw-w64\"",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32",
+                "-o",
+                "${workspaceFolder}\\ui_main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "编译使用ImGui的UI版项目。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译客户端",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\client_main.cpp",
+                "${workspaceFolder}\\client\\client_ui.cpp",
+                "${workspaceFolder}\\network\\protocol.cpp",
+                "${workspaceFolder}\\network\\client.cpp",
+                "${workspaceFolder}\\imgui\\imgui.cpp",
+                "${workspaceFolder}\\imgui\\imgui_demo.cpp",
+                "${workspaceFolder}\\imgui\\imgui_draw.cpp",
+                "${workspaceFolder}\\imgui\\imgui_tables.cpp",
+                "${workspaceFolder}\\imgui\\imgui_widgets.cpp",
+                "${workspaceFolder}\\imgui\\backends\\imgui_impl_glfw.cpp",
+                "${workspaceFolder}\\imgui\\backends\\imgui_impl_opengl3.cpp",
+                "-I\"${workspaceFolder}\"",
+                "-I\"${workspaceFolder}\\imgui\"",
+                "-I\"${workspaceFolder}\\glfw\\include\"",
+                "-L\"${workspaceFolder}\\glfw\\lib-mingw-w64\"",
+                "-lglfw3",
+                "-lopengl32",
+                "-lgdi32",
+                "-lws2_32",
+                "-o",
+                "${workspaceFolder}\\client.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "编译网络客户端版本。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译服务端",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\server_main.cpp",
+                "${workspaceFolder}\\network\\protocol.cpp",
+                "${workspaceFolder}\\network\\server.cpp",
+                "${workspaceFolder}\\user\\user.cpp",
+                "${workspaceFolder}\\store\\store.cpp",
+                "${workspaceFolder}\\order\\order.cpp",
+                "${workspaceFolder}\\order\\ordermanager.cpp",
+                "-I\"${workspaceFolder}\"",
+                "-lws2_32",
+                "-o",
+                "${workspaceFolder}\\server.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "detail": "编译网络服务端版本。"
+        }
+    ],
+    "version": "2.0.0"
+}

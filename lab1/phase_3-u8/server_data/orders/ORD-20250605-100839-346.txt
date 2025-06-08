@@ -1,0 +1,8 @@
+OrderID:ORD-20250605-100839-346
+CustomerUsername:1234
+Timestamp:1749089319
+Status:COMPLETED
+TotalAmount:676.83
+ItemsCount:2
+123,123,5,123.00,ab
+afa,afa,3,20.61,ab

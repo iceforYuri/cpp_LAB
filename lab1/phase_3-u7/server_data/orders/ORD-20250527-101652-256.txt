@@ -1,0 +1,9 @@
+OrderID:ORD-20250527-101652-256
+CustomerUsername:1234
+Timestamp:1748312212
+Status:COMPLETED
+TotalAmount:656.19
+ItemsCount:3
+sb,sb,6,40.40,ab
+afa,afa,8,12.00,ab
+afds,afds,5,63.56,ab

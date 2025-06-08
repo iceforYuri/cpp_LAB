@@ -1,0 +1,7 @@
+Book,afds,i don't like,99,9979,0.358,ab,me,120102
+Generic,sb,sb,151,82,0.313,ab,sb
+Generic,afa,sb,30,72,0.313,ab,sb
+Generic,a,a,0,0,0,ab,a
+Generic,aba,a,4,4,0,ab,abaab
+Book,aa,a,2,923533648,0,ab,Unknown Author,N/A
+Generic,bb,bb,2,2,0,ab,bb

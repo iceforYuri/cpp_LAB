@@ -1,0 +1,7 @@
+OrderID:ORD-20250526-093938-632
+CustomerUsername:1234
+Timestamp:1748223578
+Status:COMPLETED
+TotalAmount:40.40
+ItemsCount:1
+sb,sb,1,40.40,ab

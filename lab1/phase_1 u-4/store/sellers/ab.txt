@@ -1,0 +1,5 @@
+Book,afds,i don't like,40,3,0.694,ab,me,120102
+Book,111,1,5,1,0.694,ab,1,1
+Book,1111,11,2,2,0.694,ab,1,11
+Book,c++ primer plu,a,100,10,0,ab,n,123412
+Book,ab,ab,1,1,0,ab,ab,ab
