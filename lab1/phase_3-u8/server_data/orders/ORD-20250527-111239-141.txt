@@ -1,7 +1,0 @@
-OrderID:ORD-20250527-111239-141
-CustomerUsername:afa
-Timestamp:1748315559
-Status:COMPLETED
-TotalAmount:63.56
-ItemsCount:1
-afds,afds,1,63.56,ab

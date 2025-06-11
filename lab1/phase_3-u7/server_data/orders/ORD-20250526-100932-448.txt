@@ -1,8 +1,0 @@
-OrderID:ORD-20250526-100932-448
-CustomerUsername:1234
-Timestamp:1748225372
-Status:COMPLETED
-TotalAmount:107.50
-ItemsCount:2
-afds,afds,1,95.50,ab
-afa,afa,1,12.00,ab

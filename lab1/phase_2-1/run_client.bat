@@ -1,3 +1,0 @@
-@echo off
-echo 正在启动客户端...
-start build\client.exe

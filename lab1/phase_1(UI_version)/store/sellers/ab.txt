@@ -1,3 +1,0 @@
-Book,afds,i don't like,100,5,0.5,ab,me,120102
-Book,111,1,5,1,0,ab,1,1
-Book,1111,11,2,2,0,ab,1,11

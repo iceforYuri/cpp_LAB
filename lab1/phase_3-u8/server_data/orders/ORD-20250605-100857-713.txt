@@ -1,7 +1,0 @@
-OrderID:ORD-20250605-100857-713
-CustomerUsername:1234
-Timestamp:1749089337
-Status:COMPLETED
-TotalAmount:103.74
-ItemsCount:1
-sb,sb,1,103.74,ab

@@ -1,7 +1,0 @@
-OrderID:ORD-20250605-141825-567
-CustomerUsername:1234
-Timestamp:1749104305
-Status:COMPLETED
-TotalAmount:1483.92
-ItemsCount:1
-afa,afa,72,20.61,ab

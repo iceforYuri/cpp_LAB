@@ -1,9 +1,0 @@
-OrderID:ORD-20250527-120820-081
-CustomerUsername:1234
-Timestamp:1748318900
-Status:COMPLETED
-TotalAmount:870.18
-ItemsCount:3
-sb,sb,4,69.39,ab
-afds,afds,9,63.56,ab
-afa,afa,1,20.61,ab

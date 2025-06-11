@@ -1,7 +1,0 @@
-OrderID:ORD-20250528-212302-508
-CustomerUsername:1234
-Timestamp:1748438582
-Status:COMPLETED
-TotalAmount:40.40
-ItemsCount:1
-sb,sb,1,40.40,ab

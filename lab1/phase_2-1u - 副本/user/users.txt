@@ -1,8 +1,0 @@
-admin,admin,admin,0
-afa,afa,customer,0
-a,a,customer,0
-asdfas,asdfas,customer,0
-ab,ab,seller,13802.2
-asdfasa,a,customer,0
-afaj,afaj,seller,0
-1234,1234,customer,9804.3

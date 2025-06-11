@@ -1,4 +1,0 @@
-Book,afds,i don't like,191,9977,0.5,ab,me,120102
-Generic,sb,sb,101,98,0.6,ab,sb
-Generic,afa,sb,30,90,0.6,ab,sb
-Generic,a,a,0,0,0,ab,a

@@ -1,7 +1,0 @@
-OrderID:ORD-20250515-181759-395
-CustomerUsername:1234
-Timestamp:1747304279
-Status:COMPLETED
-TotalAmount:3820.00
-ItemsCount:1
-afds,afds,40,95.50,ab
